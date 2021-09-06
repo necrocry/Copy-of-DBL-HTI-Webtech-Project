@@ -1,0 +1,87 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.body{
+    position: relative;
+}
+
+.container{
+    height: 200vh;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.navBar{
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.navButton{
+    position: relative;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #005681;
+}
+
+.homebutton{
+    position: absolute;
+    left:10px;
+    top:10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #005681;
+}
+
+.titlecontainer{
+    justify-self: top;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    display: row;
+    justify-content: space-evenly;
+}
+
+.lefttitle{
+    margin: 30px;
+    align-content: center;
+    font-size:xx-large;
+}
+
+.righttitle{
+    margin: 30px;
+    align-content: center;
+    font-size:xx-large;
+}
+
+.heatmap{
+    width: 40%;
+    float: left;
+    display: inline;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    height: 80%;
+}
+.networkgraph{
+    width: 40%;
+    float: right;
+    border: 1px solid lightgray;
+    display: inline;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    height: 80%;
+}
+
+.bargraph{
+    position: relative;
+    top: 50%;
+}

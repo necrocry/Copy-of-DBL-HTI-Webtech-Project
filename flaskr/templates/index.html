@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <title>DBL website group 21</title>
+    <head>
+        <meta charset='UTF-8'>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css')}}"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        
+    </head>
+
+    <body>
+        <nav class="navBar">
+                <a href="/heatmap_code" class="navButton"> Heatmap</a>
+                <a href="/network" class="navButton"> Network Graph</a>
+                <a href="/bargraph_code" class="navButton"> Bar Graph</a>
+                <a href="/both" class="navButton"> All graphs</a>
+        </nav>
+        <div class="heading" id="Section1">
+            <h1 class="title">
+                Welcome to our website!
+            </h1>
+            <img src="/static/styles/images/logodblBLACKtransparantbl.png" alt="Logo" class="logo">
+            <div class="form">
+                <form enctype="multipart/form-data" action="http://localhost:5000/input" method="POST" class="formLink">
+                    <div class="formContainer">
+                        <input type= "file" name="file" class="fileInput" accept=".csv">
+                            <label for="file" class="label-file">
+                                <span class="chooseFile">Choose file</span>
+                            </label>
+                        <input type= "submit" name="submit" class="submitButton">
+                            <label for="submit" class="label-submit">
+                                <span class="submitFile">Submit</span>
+                            </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="links" id="section2">
+            <p class="Visualization">
+                Visualizations!
+            </p>
+            <a data-scroll href="#section1"></a>
+            <a data-scroll href="#section2"></a>
+            <a class="heatmapButton" href="/heatmap_code">Heatmap</a>
+            <a class="networkButton" href="/network">Network graph</a>
+            <a class="sankeyButton" href="/bargraph_code">Bar Graph</a>
+            <a class="allButton" href="/both">All Visualizations</a>
+        </div>
+
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+
+        <!--
+        
+        <div style="margin: 10px; width: 230px; height: 100%; text-align: center; vertical-align: middle; display: inline-block;">
+            <strong>
+                <a style="padding: 30px; border: 3px solid #5386E4; color: #4C4B63; font-size: 18px; text-decoration: none; display: block;" title="Visualizations" href="/heatmap_code">heatmap
+                </a>
+            </strong>
+        </div>
+        <div style="margin: 10px; width: 230px; height: 100%; text-align: center; vertical-align: middle; display: inline-block;">
+            <strong>
+                <a style="padding: 30px; border: 3px solid #5386E4; color: #4C4B63; font-size: 18px; text-decoration: none; display: block;" title="Visualizations" href="/network">network
+                </a>
+            </strong>
+        </div>
+        -->
+    </body>
+</html>

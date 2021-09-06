@@ -1,0 +1,36 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.body{
+    position: relative;
+    justify-content: center;
+}
+
+.navBar{
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.navButton{
+    position: relative;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #005681;
+}
+
+.homebutton{
+    position: absolute;
+    left:10px;
+    top:10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #005681;
+}

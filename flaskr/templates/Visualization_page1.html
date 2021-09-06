@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/stylesheatmap.css')}}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.3.2.min.js"
+        crossorigin="anonymous"></script>
+
+    {{script|safe}}
+    </script>
+    
+</head>
+
+<body>
+    <nav class="navBar">
+        <a href="/heatmap_code" class="navButton"> Heatmap</a>
+        <a href="/network" class="navButton"> Network Graph</a>
+        <a href="/bargraph_code" class="navButton"> Bar Graph</a>
+        <a href="/both" class="navButton"> All graphs</a>
+        <a href="/" class="homebutton"> Homepage</a>
+      </nav>
+    <div class="container">
+        <div class="heatmap">
+            {{div|safe}}    
+        </div>
+    </div>
+
+
+</body>
+</html>
