@@ -4,8 +4,7 @@
 # pip install flask
 # pip install pyvis
 # pip install networkx
-#test
-#test
+
 from flaskr import create_app
 
 app = create_app()
