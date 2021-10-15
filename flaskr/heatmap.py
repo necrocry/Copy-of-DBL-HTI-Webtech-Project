@@ -46,6 +46,9 @@ def heatmap_code():
 
     id_list = list( dict.fromkeys(id_list))
     id_list.sort()
+    
+    #make id list with strings
+
 
 
     #make id list with strings
