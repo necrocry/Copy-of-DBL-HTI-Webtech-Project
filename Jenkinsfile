@@ -13,10 +13,6 @@ pipeline {
                 sh '/usr/local/bin/docker image build -t $IMAGE:latest .'
          //       sh 'docker image tag $DOCKER_HUB_REPO:latest $DOCKER_HUB_REPO:$BUILD_NUMBER'
 
-                //  Pushing Image to Repository
-         //       sh 'docker push desynchd/docker101tutorial:$BUILD_NUMBER'
-           //     sh 'docker push desynchd/docker101tutorial:latest'
-                
                 echo "Image built and pushed to repository"
             }
         }
