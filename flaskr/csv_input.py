@@ -18,7 +18,7 @@ def input():
             CSVfile = request.files['file'] 
             filename = 'csv_file.csv'
             CSVfile.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
-            #csv_file = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+           
             return render_template('index.html')
 
 @upload.route('/input_page')
