@@ -115,6 +115,8 @@ def network():
     # the visualizations.html to show the nodes and the edges
     # the interactive part comes from javascript code and the
     # visJS library 
+        # visJS library 
+
 
     # the code below renders the templates/visualizations.html file
     # and displays the webpage to the user
