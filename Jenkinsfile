@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_REPO = "desynchd/vis-project"
+        DOCKER_HUB_REPO = "desynchd/docker101tutorial"
         CONTAINER_NAME = "flask-container"
         STUB_VALUE = "200"
     }
@@ -14,8 +14,8 @@ pipeline {
                 sh 'docker image tag $DOCKER_HUB_REPO:latest $DOCKER_HUB_REPO:$BUILD_NUMBER'
 
                 //  Pushing Image to Repository
-                sh 'docker push desynchd/vis-project:$BUILD_NUMBER'
-                sh 'docker push desynchd/vis-project:latest'
+                sh 'docker push desynchd/docker101tutorial:$BUILD_NUMBER'
+                sh 'docker push desynchd/docker101tutorial:latest'
                 
                 echo "Image built and pushed to repository"
             }
