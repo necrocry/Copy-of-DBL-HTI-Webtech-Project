@@ -1,1 +1,6 @@
 flask
+numpy
+bokeh
+pandas
+pyvis
+networkx
