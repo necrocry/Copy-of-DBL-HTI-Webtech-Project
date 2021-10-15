@@ -23,7 +23,7 @@ bargraph = Blueprint('Bargraph', __name__)
 def bargraph_code():
             
             #File input path
-            csv_path = os.path.join(os.path.abspath('flaskr'), 'static\csvs\csv_file.csv')
+            csv_path = os.path.join(os.path.abspath('flaskr'), 'static/csvs/csv_file.csv')
             df_csv = pd.read_csv(csv_path)
             df_csv['year'] = pd.DatetimeIndex(df_csv['date']).year                                                      #Extracts only the year from the date
 
