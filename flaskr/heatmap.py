@@ -27,8 +27,7 @@ heatmap = Blueprint('heatmap', __name__)
 @heatmap.route('/heatmap_code')
 def heatmap_code():
     #create a dataframe from CSV file
-    csv_path = os.path.join(os.path.abspath('flaskr'), 'static\csvs\csv_file')
-    #csv_path = r'C:\Users\Admin\Documents\TUe\DBL HTI\enron-v1.csv'    LOCAL
+    csv_path = os.path.join(os.path.abspath('flaskr'), 'static/csvs/csv_file')
     enron_csv = pd.read_csv(csv_path,parse_dates=['date'])
 
     #create dataframe with fromId and toId
