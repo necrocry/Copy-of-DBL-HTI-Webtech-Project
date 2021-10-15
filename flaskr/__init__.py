@@ -19,7 +19,7 @@ def create_app():
     ROOT_PATH = os.path.abspath(TOP_FILE)
 
     #designates folder where upload files are stored
-    UPLOAD_FOLDER = os.path.join(ROOT_PATH, 'static\csvs')
+    UPLOAD_FOLDER = os.path.join(ROOT_PATH, 'static/csvs')
     #sets the upload folder in the app config
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
