@@ -49,8 +49,8 @@ def multiple():
 
 
   #create a dataframe from CSV file
-  csv_path = os.path.join(os.path.abspath('flaskr'), 'static\csvs\csv_file.csv')
-  #csv_path = r'C:\Users\Admin\Documents\TUe\DBL HTI\enron-v1.csv'    LOCAL
+  csv_path = os.path.join(os.path.abspath('flaskr'), 'static/csvs/csv_file.csv')
+
   enron_csv = pd.read_csv(csv_path,parse_dates=['date'])
 
 
@@ -469,8 +469,7 @@ def data():
     end_date = pd.Timestamp(re.sub('[-]', ', ', end_date))
 
     #create a dataframe from CSV file
-    csv_path = os.path.join(os.path.abspath('flaskr'), 'static\csvs\csv_file.csv')
-  #csv_path = r'C:\Users\Admin\Documents\TUe\DBL HTI\enron-v1.csv'    LOCAL
+    csv_path = os.path.join(os.path.abspath('flaskr'), 'static/csvs/csv_file.csv')
     df = pd.read_csv(csv_path,parse_dates=['date'])
 
     # create an object
@@ -531,11 +530,6 @@ def data():
     #create dataframe with fromId and toId
     df_id = df[['fromId', 'toId', 'messageType', 'date']]
 
-
-    #create a dataframe from CSV file
-    #csv_path = os.path.join(os.path.abspath('flaskr'), 'static\csvs\csv_file')
-    #csv_path = r'C:\Users\Admin\Documents\TUe\DBL HTI\enron-v1.csv'    LOCAL
-    #enron_csv = pd.read_csv(csv_path,parse_dates=['date'])
 
 
     #create dataframe with fromId and toId
@@ -763,7 +757,7 @@ def data():
     layout = column(column([type_button, heatmap_figure]), sizing_mode="scale_both")
     
     item_text = json.dumps(json_item(layout, "myplot"))
-    file = open(os.path.join(os.path.abspath('flaskr'), 'static\layout.js'), 'w')
+    file = open(os.path.join(os.path.abspath('flaskr'), 'static/layout.js'), 'w')
     file.write(item_text)
     file.close()
     
