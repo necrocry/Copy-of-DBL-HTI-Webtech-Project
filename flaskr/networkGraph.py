@@ -27,7 +27,7 @@ networkGraph = Blueprint('networkGraph', __name__)
 @networkGraph.route('/network')
 def network():
 #find uploaded csv file name, save it as a var
-    dirs = os.path.abspath('flaskr\static\csvs')
+    dirs = os.path.abspath('flaskr/static/csvs')
     file_list = os.listdir(dirs)
     csv_file = os.path.join(dirs, file_list[0])
 
