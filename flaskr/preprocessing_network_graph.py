@@ -11,8 +11,7 @@ def preprocessing_network_graph():
             
     #create a dataframe
     #format the dataframe
-    # for mac :)) df = pd.read_csv(os.path.abspath('flaskr/static/csvs/csv_file.csv'))
-    df = pd.read_csv(os.path.abspath('flaskr\static\csvs\csv_file.csv'))
+    df = pd.read_csv(os.path.abspath('flaskr/static/csvs/csv_file.csv'))
 
     #adds nodes and edges to the object net
                 
