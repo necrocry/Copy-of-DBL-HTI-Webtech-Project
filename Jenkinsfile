@@ -22,10 +22,10 @@ pipeline {
             steps {
                 script{
     
-                        sh '/usr/local/bin/docker stop $CONTAINER_NAME'
-                        sh '/usr/local/bin/docker rm $CONTAINER_NAME'
-                        sh '/usr/local/bin/docker run -d -p 5000:5000 $CONTAINER_NAME'
-                        }
+                   sh '/usr/local/bin/docker stop $CONTAINER_NAME'
+                   sh '/usr/local/bin/docker rm $CONTAINER_NAME'
+                   sh '/usr/local/bin/docker run -d -p 5000:5000 $CONTAINER_NAME'
+                        
                    sh 'echo "Latest image/code deployed"'
                 }
             }
